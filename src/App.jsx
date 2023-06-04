@@ -1,5 +1,14 @@
+import { AuthProvider } from "./providers/AuthProvider";
+import { RoutesMain } from "./routes";
+
 function App() {
-  return <h1>Oi</h1>;
+  return (
+    <>
+      <AuthProvider>
+        <RoutesMain />
+      </AuthProvider>
+    </>
+  );
 }
 
 export default App;
