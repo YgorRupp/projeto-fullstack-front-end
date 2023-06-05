@@ -43,7 +43,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       localStorage.setItem("your-todolist:token", token);
 
       navigate("dashboard");
-    } catch (error) {
+    } catch (error) {   
       console.error(error);
     }
   };
